@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+opt = "z"
+via_ir = true
+evm_version = "paris"
+solc = "0.8.20"
+gas_reports = ["*"]
+
+[rpc_endpoints]
+monad_testnet = "https://rpc.testnet-1.monad.xyz"
+
+[etherscan]
+monad_testnet = { key = "$ETHERSCAN_KEY", url = "https://explorer.testnet-1.monad.xyz/api" }
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
